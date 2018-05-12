@@ -13,7 +13,7 @@ const db = require('./config/keys').mongoURI;
 // Mongoose connect
 mongoose
   .connect(db)
-  .then(() => console.log('Successfully connected to db'))
+  .then(() => console.log('Successfully connected to Mongo db'))
   .catch(err => console.error('Error in connection to db', err));
 
 app.get('/', (req, res) => res.send('Hello world!'));
